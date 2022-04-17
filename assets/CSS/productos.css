@@ -1,0 +1,271 @@
+body{
+    font-family:sans-serif;
+}
+.logotipo{
+    width: 200px;
+}
+.container-fluid{
+    background-color: rgb(33,37,41);
+}
+.nav-link{
+    font-size: 20px;
+}
+footer{
+    background-color: rgb(33,37,41);
+    padding: 80px 0;
+    text-align: center;
+}
+
+footer .logotipo-footer{
+    width: 200px;
+}
+.iconos-redes-header{
+    width: 20px;
+    margin: 8px 5px;
+}
+#p1{
+    color: rgb(173, 173, 173);
+}
+/**/
+.altura-a-b{
+    padding: 40px 0;
+}
+.volver{
+    margin: 0 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.volver:hover{
+    color: rgb(158, 158, 158);
+}
+
+/*CABEZERA*/
+header{
+    background: #212529;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+nav.contenedor{
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    height: 70px;
+}
+.logo img{
+    height: 100%;
+    vertical-align: top;
+    background: #f2f2f2;
+}
+nav a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.hamburguesa{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+.hamburguesa img{
+    vertical-align: top;
+    padding: 23px;
+}
+
+.altura-a-b{
+    padding: 40px 0;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #212529;
+    padding: 70px 0;
+    text-align: center;
+}
+
+footer .logotipo-footer{
+    width: 200px;
+}
+#p1{
+    color: rgb(255, 255, 255);
+}
+
+/*REDES SOCIALES*/
+li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+  
+li a {
+    position: relative; 
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 53px;
+    background: rgb(71, 71, 71);
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+  
+  /*LUZ INSTAGRAM*/
+.ig a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #7322b6;
+    transition: .8s;
+    z-index: -1;
+}
+  
+.ig a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #7322b6;
+}
+  
+.ig a:hover {
+    color: #7322b6;
+    box-shadow: 0 0 5px #7322b6;
+    text-shadow: 0 0 5px #7322b6;
+}
+  
+  /*LUZ WHATSAPP*/
+.wsp a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #13d42d;
+      transition: .8s;
+      z-index: -1;
+}
+    
+.wsp a:hover::before {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #13d42d;
+}
+    
+.wsp a:hover {
+      color: #13d42d;
+      box-shadow: 0 0 5px #13d42d;
+      text-shadow: 0 0 5px #13d42d;
+}
+  
+  /*LUZ FACEBOOK*/
+.email a::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #3a63bb;
+      transition: .8s;
+      z-index: -1;
+}
+    
+.email a:hover::before {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #3a63bb;
+}
+    
+.email a:hover {
+      color: #3a63bb;
+      box-shadow: 0 0 5px #3a63bb;
+      text-shadow: 0 0 5px #3a63bb;
+}
+
+/*QUERY*/
+@media screen and (max-width:800px){
+    .hamburguesa{
+        display: block;
+    }
+    .enlaces{
+        position: fixed;
+        background: #3d3d3d;
+        left: 0;
+        top: 70px;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+    .enlaces2{
+        transform: translateX(0%);
+    }
+    nav a {
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        margin: 20px 0;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    nav a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid #262626;
+        border-bottom: 2px solid #262626;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    nav a:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        transform: scale(0);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+    nav a:hover {
+        color: rgb(122, 122, 122);
+    }
+    nav a:hover:before {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    nav a:hover:before {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
