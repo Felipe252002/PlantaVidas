@@ -23,6 +23,7 @@ nav.contenedor{
 nav .logo{
     height: 70px;
 }
+a
 .logo img{
     height: 100%;
     vertical-align: top;
@@ -159,6 +160,7 @@ li a {
 
 
 footer{
+    width: 100%;
     background-color: rgb(33,37,41);
     padding: 70px 0;
     text-align: center;
