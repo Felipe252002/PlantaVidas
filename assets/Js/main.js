@@ -3,6 +3,7 @@ const hamburguesa = document.getElementsByClassName("hamburguesa")[0];
 const menuHamburguesa = document.getElementById("hamburguesa");
 let abierto = false;
 
+
 const toggleMenu = () =>{
     enlaces.classList.toggle("enlaces2");
     enlaces.style.transition = "transform 0.5s ease-in-out"
