@@ -15,6 +15,12 @@ $(document).ready(function(){
             msg=msg+"   El apellido está en blanco!!";
             //$("error").html("El nombre está en blanco");
         }
+        //if($("#edad"<0)){
+        //    msg=msg+"   La edad debe ser valida";
+        //}
+        if($("#edad").val()<=0){
+            msg=msg+"   La edad debe ser valida!!";
+        }
         if(msg!=""){
             $("#error").html(msg);
             $("#error").show();
