@@ -86,12 +86,6 @@ main {
 	padding: 40px;
 }
 
-/*.form{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}*/
-
 .form_label{
 	display: block;
 	font-weight: 700;
